@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio - Ihsan</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/cdn.min.js"></script>
+   </head>
+   <body class="bg-gray-100 text-gray-800 flex items-center flex-col">
+
+      <div class="w-full md:w-2/3">
+         <header class="p-4">
+            <nav class="container mx-auto flex justify-between items-center">
+                  <h1 class="text-3xl font-bold">ICode.</h1>
+                  <div x-data="{ open: false }" class="md:hidden">
+                     <button @click="open = !open" class="text-gray-800 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                     </button>
+                     <div x-show="open" @click.away="open = false" class="absolute top-16 right-4 bg-white shadow-lg rounded-lg p-7 space-y-4 transition-all">
+                        <a href="index.html" class="block text-gray-800 hover:text-gray-500 uppercase">Home</a>
+                        <a href="content.html" class="block text-gray-800 hover:text-gray-500 uppercase">Content</a>
+                        <a href="feedback.html" class="block text-gray-800 hover:text-gray-500 uppercase">Feedback</a>
+                        <hr>
+                        <a href="index.html" class="block text-gray-800 bg-white py-2 px-4 rounded-full border-2 border-gray-800 uppercase">Sign In</a>
+                        <a href="index.html" class="block text-white bg-black py-2 px-4 rounded-full border-2 border-gray-800 uppercase">Sign Up</a>
+                     </div>
+                  </div>
+                  <div class="hidden md:flex space-x-4">
+                     <a href="index.html" class="hover:text-gray-300 uppercase">Home</a>
+                     <a href="content.html" class="hover:text-gray-300 uppercase">Content</a>
+                     <a href="feedback.html" class="hover:text-gray-300 uppercase border-b border-gray-800">Feedback</a>
+                  </div>
+                  <div class="hidden md:flex space-x-4">
+                     <a href="index.html" class="hover:text-gray-300 bg-white py-2 px-8 rounded-full border-2 border-gray-800 uppercase">Sign In</a>
+                     <a href="index.html" class="hover:text-gray-300 bg-black text-white py-2 px-8 rounded-full border-2 border-gray-800 uppercase">Sign Up</a>
+                  </div>
+            </nav>
+         </header>
+
+      <main class="container mx-auto my-8 p-4">
+         <h2 class="text-3xl font-semibold text-center mb-6">We Value Your Feedback</h2>
+         <form class="max-w-lg mx-auto bg-white p-6 rounded shadow-lg">
+               <div class="mb-4">
+                  <label for="name" class="block text-sm font-semibold mb-2">Your Name</label>
+                  <input type="text" id="name" class="w-full p-2 border rounded" placeholder="Enter your name">
+               </div>
+               <div class="mb-4">
+                  <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+                  <input type="email" id="email" class="w-full p-2 border rounded" placeholder="Enter your email">
+               </div>
+               <div class="mb-4">
+                  <label for="message" class="block text-sm font-semibold mb-2">Message</label>
+                  <textarea id="message" class="w-full p-2 border rounded" placeholder="Write your feedback here"></textarea>
+               </div>
+               <button type="submit" class="w-full bg-black text-white py-2 rounded hover:bg-gray-800">Submit</button>
+         </form>
+      </main>
+
+         <footer class="text-gray-800 flex flex-wrap p-8 border-t-2 border-black mt-4">
+            <div class="w-full md:w-2/5 mb-4 md:mb-0">
+               <h1 class="text-3xl font-bold">ICode.</h1>
+               <p class="text-md mt-4">Learning Labs 2024 <br>Taught By: Afif Rahadi</p>
+               <p class="text-md mt-4">University of Sebelas Maret</p>
+            </div>
+            <div class="w-full md:w-1/5 mb-4 md:mb-0">
+               <h1 class="text-md font-bold pt-4">About</h1>
+               <p class="text-sm mt-4">Ihsan Restu Adi <br>L0124058 <br>Informatics</p>
+               <p class="text-sm mt-4">University of Sebelas Maret</p>
+            </div>
+            <div class="w-full md:w-1/5 mb-4 md:mb-0">
+               <h1 class="text-md font-bold pt-4">Resources</h1>
+               <p class="text-sm mt-4">Help & Support <br>Feedback <br>Blog</p>
+            </div>
+            <div class="w-full md:w-1/5">
+               <h1 class="text-md font-bold pt-4">Get in touch</h1>
+               <p class="text-sm mt-4">iihsannlearn@gmail.com</p>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>

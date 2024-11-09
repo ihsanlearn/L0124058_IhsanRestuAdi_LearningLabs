@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio - Ihsan</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/cdn.min.js"></script>
+   </head>
+   <body class="bg-gray-100 text-gray-800 flex items-center flex-col">
+      <div class="w-full lg:w-2/3">
+         <header class="p-4">
+            <nav class="container mx-auto flex justify-between items-center">
+                  <h1 class="text-3xl font-bold">ICode.</h1>
+                  <div x-data="{ open: false }" class="md:hidden">
+                     <button @click="open = !open" class="text-gray-800 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                     </button>
+                     <div x-show="open" @click.away="open = false" class="absolute top-16 right-4 bg-white shadow-lg rounded-lg p-7 space-y-4 transition-all">
+                        <a href="index.html" class="block text-gray-800 hover:text-gray-500 uppercase">Home</a>
+                        <a href="content.html" class="block text-gray-800 hover:text-gray-500 uppercase">Content</a>
+                        <a href="feedback.html" class="block text-gray-800 hover:text-gray-500 uppercase">Feedback</a>
+                        <hr>
+                        <a href="index.html" class="block text-gray-800 bg-white py-2 px-4 rounded-full border-2 border-gray-800 uppercase">Sign In</a>
+                        <a href="index.html" class="block text-white bg-black py-2 px-4 rounded-full border-2 border-gray-800 uppercase">Sign Up</a>
+                     </div>
+                  </div>
+                  <div class="hidden md:flex space-x-4">
+                     <a href="index.html" class="hover:text-gray-300 uppercase border-b border-gray-800">Home</a>
+                     <a href="content.html" class="hover:text-gray-300 uppercase">Content</a>
+                     <a href="feedback.html" class="hover:text-gray-300 uppercase">Feedback</a>
+                  </div>
+                  <div class="hidden md:flex space-x-4">
+                     <a href="index.html" class="hover:text-gray-300 bg-white py-2 px-8 rounded-full border-2 border-gray-800 uppercase">Sign In</a>
+                     <a href="index.html" class="hover:text-gray-300 bg-black text-white py-2 px-8 rounded-full border-2 border-gray-800 uppercase">Sign Up</a>
+                  </div>
+            </nav>
+         </header>
+
+         <main class="container mx-auto flex flex-col gap-10 items-center my-12 px-6">
+               <div class="text-center">
+                  <h2 class="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight">
+                     Hi There,
+                  </h2>
+                  <p class="text-lg sm:text-xl mt-4 text-gray-600 max-w-3xl mx-auto">
+                     Hello, I’m Ihsan Restu Adi, an Informatics student at UNS <br> with a passion for web development and cybersecurity. I'm driven to expand my skills and contribute to meaningful, innovative tech projects.
+                  </p>
+               </div>
+               <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                  <div class="flex -space-x-3">
+                     <img src="assets/coffee.avif" alt="User 1" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full border-2 border-white shadow-lg">
+                     <img src="assets/prgmg.avif" alt="User 2" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full border-2 border-white shadow-lg">
+                     <img src="assets/billiard.avif" alt="User 3" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full border-2 border-white shadow-lg">
+                  </div>
+                  <div>
+                     <p class="text-lg font-semibold">Let's Play</p>
+                     <p class="text-gray-600">With some of my hobbies</p>
+                  </div>
+               </div>
+         </main>
+
+         <section class="container mx-auto flex flex-col md:flex-row items-center md:space-x-12 p-6">
+               <div class="text-center md:text-left md:w-1/2 space-y-4">
+                  <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm inline-block">Frontend Development Project</span>
+                  <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">Marketplace and Anime Website Project</h1>
+                  <p class="text-gray-600 text-lg mt-4">This is a project for the Frontend Development course under Learning Labs at UNS. I've created a marketplace website as part of my coursework to showcase my skills in web development.</p>
+                  <div class="flex flex-col sm:flex-row sm:space-x-4 mt-6">
+                     <a href="content.html" class="bg-black text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-800 transition">Get Started Now</a>
+                  </div>
+                  <div class="flex space-x-4 text-gray-500 mt-4">
+                     <span>✔️ No credit card required</span>
+                     <span>✔️ Cancel Anytime</span>
+                  </div>
+               </div>
+               <div class="md:w-1/2 flex justify-end mt-8 md:mt-0">
+                  <img src="assets/products.png" width="400" height="300" alt="Marketplace Overview" class="rounded-xl shadow-lg">
+               </div>
+         </section>
+
+         <footer class="text-gray-800 flex flex-col lg:flex-row p-8 h-auto lg:h-64 border-t-2 border-black mt-4 gap-6 lg:gap-0">
+               <div class="lg:w-2/5">
+                  <h1 class="text-3xl font-bold">ICode.</h1>
+                  <p class="text-md mt-4">Learning Labs 2024 <br>Taught By: Afif Rahadi</p>
+                  <p class="text-md mt-4">University of Sebelas Maret</p>
+               </div>
+               <div class="lg:w-1/5">
+                  <h1 class="text-md font-bold pt-4">About</h1>
+                  <p class="text-sm mt-4">Ihsan Restu Adi <br>L0124058 <br>Informatics</p>
+                  <p class="text-sm mt-4">University of Sebelas Maret</p>
+               </div>
+               <div class="lg:w-1/5">
+                  <h1 class="text-md font-bold pt-4">Resources</h1>
+                  <p class="text-sm mt-4">Help & Support <br>Feedback <br>Blog</p>
+               </div>
+               <div class="lg:w-1/5">
+                  <h1 class="text-md font-bold pt-4">Get in touch</h1>
+                  <p class="text-sm mt-4">iihsannlearn@gmail.com</p>
+               </div>
+         </footer>
+      </div>
+   </body>
+</html>
