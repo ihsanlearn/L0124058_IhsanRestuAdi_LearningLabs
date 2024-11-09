@@ -26,7 +26,7 @@ This is a portfolio website created to showcase my projects, skills, and persona
 ├── js/
 │   └── script.js            # JavaScript for dynamic elements (if applicable)
 ├── css/
-│   └── style.css            # Additional CSS (if needed)
+│   └── style.css            # Additional CSS (if needed) (In this project, mostly full Tailwind CSS)
 ├── assets/
 │   └── *images              # Directory for images
 └── README.md                # Project documentation
