@@ -1,6 +1,6 @@
-# Portfolio Web - Ihsan
+# Learning Labs 2024 - Ihsan
 
-This is a portfolio website created to showcase my projects, skills, and personal information in a professional and user-friendly way. The website is designed with a responsive layout, utilizing modern web development practices to ensure optimal performance on different devices.
+This is a portfolio website created to showcase my projects, skills, and personal information in a professional (maybe) and user-friendly way. The website is designed with a responsive layout, utilizing modern web development practices to ensure optimal performance on different devices.
 
 ## Features
 
@@ -30,3 +30,5 @@ This is a portfolio website created to showcase my projects, skills, and persona
 ├── assets/
 │   └── *images              # Directory for images
 └── README.md                # Project documentation
+
+
